@@ -22,10 +22,11 @@ int main() {
         }
     }
 
-    cout << "\nAscending Order: ";
+    cout << endl << "Ascending Order: ";
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
     }
+    cout << endl;
 
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
@@ -37,7 +38,7 @@ int main() {
         }
     }
 
-    cout << "\nDescending Order: ";
+    cout << endl << "Descending Order: ";
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
     }

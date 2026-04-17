@@ -22,7 +22,7 @@ int main() {
         }
     }
 
-    cout << "\nPositive numbers: " << positive << endl;
+    cout << endl << "Positive numbers: " << positive << endl;
     cout << "Negative numbers: " << negative << endl;
 
     return 0;

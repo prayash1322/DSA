@@ -81,12 +81,12 @@ int main() {
     mergeSort(even, 0, eCount - 1, true);
     mergeSort(odd, 0, oCount - 1, false);
 
-    cout << "\nSorted Array: ";
-    for (int i = 0; i < oCount; i++) {
-        cout << odd[i] << " ";
-    }
+    cout << endl << "Sorted Array: ";
     for (int i = 0; i < eCount; i++) {
         cout << even[i] << " ";
+    }
+    for (int i = 0; i < oCount; i++) {
+        cout << odd[i] << " ";
     }
     cout << endl;
 

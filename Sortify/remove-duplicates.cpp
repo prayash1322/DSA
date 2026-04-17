@@ -26,7 +26,7 @@ int main() {
         }
     }
 
-    cout << "\nUnique elements: ";
+    cout << endl << "Unique elements: ";
     for (int i = 0; i < count; i++) {
         cout << unique[i] << " ";
     }

@@ -26,7 +26,7 @@ int main() {
         }
     }
 
-    cout << "\nLargest: " << largest << endl;
+    cout << endl << "Largest: " << largest << endl;
     if (found && secondLargest != largest) {
         cout << "Second Largest: " << secondLargest << endl;
     } else {
