@@ -54,27 +54,27 @@ dma.exe
 ## Output Screenshots
 
 ### 1. Initial Menu
-![Menu Screenshot](screenshots/menu.png)
+![Menu Screenshot](./Screenshots/menu.png)
 
 ### 2. Adding Operation
-![Append Screenshot](screenshots/append.png)
+![Append Screenshot](./Screenshots/append.png)
 
 ### 3. Insert at Beginning
-![Insert Screenshot](screenshots/insert_beginning.png)
+![Insert Screenshot](./Screenshots/insert_beginning.png)
 
 ### 4. Search Operation
-![Search Screenshot](screenshots/search.png)
+![Search Screenshot](./Screenshots/search.png)
 
 ### 5. Delete Operation
-![Delete Screenshot](screenshots/delete.png)
+![Delete Screenshot](./Screenshots/delete.png)
 
 
 ### 6. Reverse Operation
-![Reverse Screenshot](screenshots/reverse.png)
+![Reverse Screenshot](./Screenshots/reverse.png)
 
 
 ### 7. Display Operation
-![Display Screenshot](screenshots/display.png)
+![Display Screenshot](./Screenshots/display.png)
 
 
 ## Key Concepts Demonstrated
