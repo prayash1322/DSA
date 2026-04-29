@@ -55,31 +55,27 @@ dma.exe
 
 ### 1. Initial Menu
 ![Menu Screenshot](screenshots/menu.png)
-*Add screenshot of the main menu here*
 
-### 2. Append Operation
+### 2. Adding Operation
 ![Append Screenshot](screenshots/append.png)
-*Add screenshot showing append operation*
 
 ### 3. Insert at Beginning
 ![Insert Screenshot](screenshots/insert_beginning.png)
-*Add screenshot showing insert at beginning operation*
 
 ### 4. Search Operation
 ![Search Screenshot](screenshots/search.png)
-*Add screenshot showing search operation (both found and not found cases)*
 
 ### 5. Delete Operation
 ![Delete Screenshot](screenshots/delete.png)
-*Add screenshot showing delete operation*
+
 
 ### 6. Reverse Operation
 ![Reverse Screenshot](screenshots/reverse.png)
-*Add screenshot showing list before and after reverse*
+
 
 ### 7. Display Operation
 ![Display Screenshot](screenshots/display.png)
-*Add screenshot showing the complete list*
+
 
 ## Key Concepts Demonstrated
 - Dynamic memory allocation using `new` operator
@@ -98,7 +94,7 @@ dma.exe
 **Total Duration**: 4 Hours
 
 ## Author
-[Your Name]
+PRAYASH JENA
 
 ## Date
-[Current Date]
+29-04-2026

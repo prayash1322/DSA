@@ -182,6 +182,8 @@ int main() {
             case 5:
                 list.reverse();
                 cout << "List reversed!" << endl;
+                cout << "List: ";
+                list.display();
                 break;
                 
             case 6:
