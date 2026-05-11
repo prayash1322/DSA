@@ -3,7 +3,7 @@ using namespace std;
 
 class Queue
 {
-    int front, rear, size, *arr;
+    int front, rear, size, *arr , count = 0;
 
 public:
     Queue()
@@ -22,34 +22,36 @@ public:
     {
         if (rear == size - 1)
         {
-            cout << "Queue is Full! Cannot insert into Queue\n";
+            cout << "Queue is Full! Cannot insert into Queue" << endl;
             return;
         }
         if (front == -1)
             front++;
-        arr[++rear] = ele;
-        cout << "Element " << ele << " inserted successfully.\n";
+            arr[++rear] = ele;
+            cout << "Element " << ele << " inserted successfully." << endl;
+            count++;
     }
 
     void dequeue()
     {
         if (front == -1)
         {
-            cout << "Queue is Empty! Cannot remove the element!!\n";
+            cout << "Queue is Empty! Cannot remove the element!!" << endl;
             return;
         }
-        cout << "Element " << arr[front] << " removed.\n";
+        cout << "Element " << arr[front] << " removed." << endl;
         if (front == rear)
             front = rear = -1;
         else
             front++;
+            count--;
     }
 
     inline void getFront()
     {
         if (front == -1)
         {
-            cout << "Queue is Empty! Cannot remove the element!!\n";
+            cout << "Queue is Empty! Cannot remove the element!!" << endl;
             return;
         }
         cout << "Front element is: " << arr[front] << endl;
@@ -69,24 +71,24 @@ public:
     {
         if (front == -1)
         {
-            cout << "Queue is Empty!\n";
+            cout << "Queue is Empty!" << endl;
             return;
         }
         cout << "Queue: ";
         for (int i = front; i <= rear; i++)
             cout << arr[i] << " ";
-        cout << "\n";
+        cout << endl;
     }
 
     void checkEmpty()
     {
         if (front == -1)
         {
-            cout << "Queue is Empty\n";
+            cout << "Queue is Empty" << endl;
         }
         else
         {
-            cout << "Queue is not Empty\n";
+            cout << "Queue is not Empty" << endl;
         }
     }
 
@@ -94,17 +96,17 @@ public:
     {
         if (rear == size - 1)
         {
-            cout << "Queue is Full\n";
+            cout << "Queue is Full" << endl;
         }
         else
         {
-            cout << "Queue is not Full\n";
+            cout << "Queue is not Full" << endl;
         }
     }
 
     void getSize()
     {
-        cout << "Size: " << (front == -1 ? 0 : rear - front + 1) << "\n";
+        cout << "Size of the queue is: " << count << endl;
     }
 };
 
@@ -115,23 +117,23 @@ int main()
 
     do
     {
-        cout << "\n=== Queue Operations ===\n";
-        cout << "1. Add (enqueue) in the queue\n";
-        cout << "2. Remove (dequeue) from the queue\n";
-        cout << "3. Get front element\n";
-        cout << "4. Get rear element\n";
-        cout << "5. Display queue\n";
-        cout << "6. Check if queue is empty\n";
-        cout << "7. Check if queue is full\n";
-        cout << "8. Get queue size\n";
-        cout << "0. Exit\n";
-        cout << "Choice: ";
+        cout << endl << "=== Queue Operations ===" << endl;
+        cout << "1. Add (enqueue) in the queue" << endl;
+        cout << "2. Remove (dequeue) from the queue" << endl;
+        cout << "3. Get front element" << endl;
+        cout << "4. Get rear element" << endl;
+        cout << "5. Display queue" << endl;
+        cout << "6. Check if queue is empty" << endl;
+        cout << "7. Check if queue is full" << endl;
+        cout << "8. Get queue size" << endl;
+        cout << "0. Exit" << endl;
+        cout << "Enter your Choice: ";
         cin >> choice;
 
         switch (choice)
         {
         case 1:
-            cout << "Enter element: ";
+            cout << "Enter element to insert in to queue: ";
             cin >> ele;
             q.enqueue(ele);
             break;
@@ -157,10 +159,10 @@ int main()
             q.getSize();
             break;
         case 0:
-            cout << "Exiting...\n";
+            cout << "Exiting the program thank you for using!!..." << endl;
             break;
         default:
-            cout << "Invalid choice!\n";
+            cout << "Invalid choice!" << endl;
         }
     } while (choice != 0);
 
